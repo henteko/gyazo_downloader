@@ -34,7 +34,7 @@ def all_download(page = 1, remaining_count = nil)
                                 'User-Agent' => "GyazoDownloader"
                             }
                         }
-  raise Gyazo::Error, res.body unless res.code == 200
+  raise res.body unless res.code == 200
   json = JSON.parse res.body
   download(json)
 
