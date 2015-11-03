@@ -1,4 +1,4 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem 'gyazo'
+gem 'httparty'
